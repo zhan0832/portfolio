@@ -1,10 +1,11 @@
 @import url('https://fonts.cdnfonts.com/css/penn-station');
 /* basic root */
 :root{
-    --bs-primary:#e4583b;
-    --bs-secondary: #4a8af7;
+    --bs-primary:#c8400f;
+    --bs-secondary: #2964c4;
     --bs-border-color: #4a8af7;
-    --bs-border-width: 3px;
+    --bs-border-width: 2px;
+    
 }
 h1, h2{
     font-family: 'Penn Station', sans-serif;
@@ -40,6 +41,8 @@ body{
     --bs-btn-hover-border-color: var(--bs-primary);
     --bs-btn-active-bg: var(--bs-primary);
     --bs-btn-active-border-color: var(--bs-primary);
+    --bs-btn-font-weight: 600;
+    --bs-btn-font-size: 1.2rem;
 }
 .btn-outline-secondary {
     --bs-btn-color: var(--bs-secondary);
@@ -48,6 +51,8 @@ body{
     --bs-btn-hover-border-color: var(--bs-secondary);
     --bs-btn-active-bg: var(--bs-secondary);
     --bs-btn-active-border-color: var(--bs-secondary);
+    --bs-btn-font-weight: 600;
+    --bs-btn-font-size: 1.2rem;
 }
 .btn-primary{
     --bs-btn-color: var(--bs-light);
@@ -58,6 +63,8 @@ body{
     --bs-btn-hover-border-color: var(--bs-primary);
     --bs-btn-active-bg: var(--bs-light);
     --bs-btn-active-border-color: var(--bs-primary);
+    --bs-btn-font-weight: 600;
+    --bs-btn-font-size: 1.2rem;
 }
 .btn-secondary{
     --bs-btn-color: var(--bs-light);
@@ -68,6 +75,8 @@ body{
     --bs-btn-hover-border-color: var(--bs-secondary);
     --bs-btn-active-bg: var(--bs-light);
     --bs-btn-active-border-color: var(--bs-secondary);
+    --bs-btn-font-weight: 600;
+    --bs-btn-font-size: 1.2rem;
 }
 .socialmedia-icon i{
     color: var(--bs-light);
