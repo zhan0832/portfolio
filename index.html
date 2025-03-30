@@ -12,11 +12,21 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <!-- add the skip link -->
+    <div class="visually-hidden-focusable">
+        <a href="#navbarTogglerDemo02" class="skip-link">Skip to main content</a>
+        <a href="#portfolio" class="skip-link">Skip to portfolio</a>
+        <a href="#contact" class="skip-link">Skip to contact</a>
+    </div>
     <header class="banner navbar-expand-lg" role="banner">
         <nav class="navbar py-1 bg-dark bg-opacity-75" role="navigation" aria-label="Main navigation">
             <div class="container-xl container-fluid">
                 <a class="navbar-brand" href="./index.html" aria-label="AM Media Studio Home">
-                    <img src="./images/logo.png" height="40" alt="AM Media Studio logo">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="./images/logo-2x.png">
+                        <source media="(min-width: 576px)" srcset="./images/logo.png">
+                        <img src="./images/logo.png" height="40" alt="AM Media Studio logo">
+                    </picture>
                 </a>
                 <div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" data-bs-theme="dark" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation menu">
@@ -25,16 +35,16 @@
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0" role="menubar">
                             <li class="nav-item" role="none">
-                                <a class="nav-link active text-light" aria-current="page" href="#home" role="menuitem">Home</a>
+                                <a class="nav-link active text-light" aria-current="page" href="./index.html" role="menuitem">Home</a>
                             </li>
                             <li class="nav-item" role="none">
-                                <a class="nav-link text-light" href="#about" role="menuitem">About</a>
+                                <a class="nav-link text-light" href="./about.html" role="menuitem">About</a>
                             </li>
                             <li class="nav-item" role="none">
                                 <a class="nav-link text-light" href="#portfolios" role="menuitem">Portfolio</a>
                             </li>
                             <li class="nav-item" role="none">
-                                <a class="nav-link text-light" href="contact.html" role="menuitem">Contact</a>
+                                <a class="nav-link text-light" href="./contact.html" role="menuitem">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -50,18 +60,23 @@
             </div>
         </div>    
     </header>
-    <main>
+    <main id="main-content">
         <!-- about section -->
-        <section id="about" class="container-xl px-5" role="region" aria-labelledby="about-heading">
+        <section id="about" class="container-xl px-5" role="region" aria-labelledby="about-heading" itemscope itemtype="https://schema.org/Person">
             <div class="px-md-5 py-5">
                 <div class="row px-md-5 py-5">
                     <div class="col12 col-md-6 py-2 px-5">
-                        <img src="./images/my-picture.jpg" alt="Yan Zhang - Web Developer and UX Designer" class="img-fluid">
+                        <picture>
+                            <source media="(min-width: 992px)" srcset="./images/my-picture-2x.jpg">
+                            <source media="(min-width: 576px)" srcset="./images/my-picture.jpg">
+                            <img src="./images/my-picture.jpg" alt="Yan Zhang - Web Developer and UX Designer" class="img-fluid" itemprop="image">
+                        </picture>
                     </div>
                     <div class="col12 col-md-6 py-2 px-5">
-                        <h2 id="about-heading" class="display-3 mb-4">About Me</h2>
-                        <p class="lead fw-bold mb-4">Hi, I'm Yan Zhang, a passionate designer and developer specializing in Web Development, and UX/UI Design.</p>
-                        <p class="mb-4">I love blending creativity with functionality to craft visually compelling and user-friendly digital experiences.</p>
+                        <h2 id="about-heading" class="display-3 mb-4" itemprop="name">About Me</h2>
+                        <p class="lead fw-bold mb-4">Hi, I'm <span itemprop="givenName">Yan</span> <span itemprop="familyName">Zhang</span>, a passionate designer and developer specializing in Web Development, and UX/UI Design.</p>
+                        <p class="mb-4" itemprop="description">I love blending creativity with functionality to craft visually compelling and user-friendly digital experiences.</p>
+                        <p itemprop="jobTitle">Web Developer and UX Designer</p>
                         <a href="./about.html" class="btn btn-outline-primary mb-auto" aria-label="Learn more about Yan Zhang">More</a>
                     </div>                   
                 </div>   
@@ -73,32 +88,47 @@
                 <h2 id="portfolio-heading" class="display-3 pt-5 pb-5 text-center">Portfolio</h2>
                 <p class="lead text-center">Discover a showcase of the finest work. From stunning designs to seamless user experiences, explore more projects.</p>
                 <div class="row px-md-5">
-                    <div class="col-12 col-lg-4 py-5">
-                        <h3 class="pb-2">Responsive Website for Three-Star</h3>
+                    <div class="col-12 col-lg-4 py-5" itemscope itemtype="https://schema.org/CreativeWork">
+                        <h3 class="pb-2" itemprop="name">Responsive Website for Three-Star</h3>
                         <div class="row">
-                            <img class="col-12 col-md-6 col-lg-12" src="./images/three-star-media.jpg" alt="Three Star Media responsive website project">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/three-star-media-2x.jpg">
+                                <source media="(min-width: 576px)" srcset="./images/three-star-media.jpg">
+                                <img class="col-12 col-md-6 col-lg-12" src="./images/three-star-media.jpg" alt="Three Star Media responsive website project" itemprop="image">
+                            </picture>
                             <div class="col-12 col-md-6 col-lg-12">
-                                <p class="card-text pb-3">Create a fully responsive multi-page website using HTML5 and CSS3. The project will focus on implementing a mobile-first design, using Flexbox and Grid for layout, and ensuring the website adapts to different screen sizes.</p>
+                                <p class="card-text pb-3" itemprop="description">Create a fully responsive multi-page website using HTML5 and CSS3. The project will focus on implementing a mobile-first design, using Flexbox and Grid for layout, and ensuring the website adapts to different screen sizes.</p>
+                                <meta itemprop="dateCreated" content="2024">
                                 <a href="./about.html" class="btn btn-primary mb-auto" aria-label="View details of Three Star Media project">Details</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 py-5">
-                        <h3 class="pb-2">Three-page Shopping Website</h3>
+                    <div class="col-12 col-lg-4 py-5" itemscope itemtype="https://schema.org/CreativeWork">
+                        <h3 class="pb-2" itemprop="name">Three-page Shopping Website</h3>
                         <div class="row">
-                            <img class="col-12 col-md-6 col-lg-12" src="./images/three-star-media.jpg" alt="Shopping website project showcase">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/web-dev-2x.png">
+                                <source media="(min-width: 576px)" srcset="./images/web-dev.png">
+                                <img class="col-12 col-md-6 col-lg-12" src="./images/web-dev.png" alt="Shopping website project showcase" itemprop="image">
+                            </picture>
                             <div class="col-12 col-md-6 col-lg-12">
-                                <p class="card-text pb-3">This project aims to create a responsive blog website with a strong focus on accessible layout design. The website will use CSS Grid and Flexbox to ensure a modern, clean layout that adapts across devices.</p>
+                                <p class="card-text pb-3" itemprop="description">This project aims to create a responsive blog website with a strong focus on accessible layout design. The website will use CSS Grid and Flexbox to ensure a modern, clean layout that adapts across devices.</p>
+                                <meta itemprop="dateCreated" content="2024">
                                 <a href="./about.html" class="btn btn-primary mb-auto" aria-label="View details of shopping website project">Details</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 py-5">
-                        <h3 class="pb-2">Creative Lifestyle Storytelling Photography</h3>
+                    <div class="col-12 col-lg-4 py-5" itemscope itemtype="https://schema.org/CreativeWork">
+                        <h3 class="pb-2" itemprop="name">Creative Lifestyle Storytelling Photography</h3>
                         <div class="row">
-                            <img class="col-12 col-md-6 col-lg-12" src="./images/three-star-media.jpg" alt="Photography portfolio showcase">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/photo-works-2x.jpg">
+                                <source media="(min-width: 576px)" srcset="./images/photo-works.jpg">
+                                <img class="col-12 col-md-6 col-lg-12" src="./images/photo-works.jpg" alt="Photography portfolio showcase" itemprop="image">
+                            </picture>
                             <div class="col-12 col-md-6 col-lg-12">
-                                <p class="card-text pb-3">I am a level-2 Interactive Media Design program student passionate about photography. I've recently started using photography to document life and capture intriguing moments, blending creativity with storytelling.</p>
+                                <p class="card-text pb-3" itemprop="description">I am a level-2 Interactive Media Design program student passionate about photography. I've recently started using photography to document life and capture intriguing moments, blending creativity with storytelling.</p>
+                                <meta itemprop="dateCreated" content="2024">
                                 <a href="./about.html" class="btn btn-primary mb-auto" aria-label="View details of photography portfolio">Details</a>
                             </div>
                         </div>

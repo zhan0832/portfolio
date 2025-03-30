@@ -12,15 +12,100 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header>
-
+    <header class="headerbackground navbar-expand-lg">
+        <nav class="navbar py-1 bg-dark bg-opacity-75" role="navigation" aria-label="Main navigation">
+            <div class="container-xl container-fluid">
+                <a class="navbar-brand" href="./index.html" aria-label="AM Media Studio Home">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="./images/logo-2x.png">
+                        <source media="(min-width: 576px)" srcset="./images/logo.png">
+                        <img src="./images/logo.png" height="40" alt="AM Media Studio logo">
+                    </picture>
+                </a>
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" data-bs-theme="dark" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation menu">
+                        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0" role="menubar">
+                            <li class="nav-item" role="none">
+                                <a class="nav-link active text-light" aria-current="page" href="./index.html" role="menuitem">Home</a>
+                            </li>
+                            <li class="nav-item" role="none">
+                                <a class="nav-link text-light" href="./about.html" role="menuitem">About</a>
+                            </li>
+                            <li class="nav-item" role="none">
+                                <a class="nav-link text-light" href="#portfolios" role="menuitem">Portfolio</a>
+                            </li>
+                            <li class="nav-item" role="none">
+                                <a class="nav-link text-light" href="./contact.html" role="menuitem">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        
+        <section id="about" class="container-xl px-5" role="region" aria-labelledby="about-heading" itemscope itemtype="https://schema.org/Person">
+            <div class="px-md-5 py-5">
+                <div class="row px-md-5 py-5">
+                    <div class="col12 col-md-6 py-2 px-5">
+                        <picture>
+                            <source media="(min-width: 992px)" srcset="./images/my-picture-2x.jpg">
+                            <source media="(min-width: 576px)" srcset="./images/my-picture.jpg">
+                            <img src="./images/my-picture.jpg" alt="Yan Zhang - Web Developer and UX Designer" class="img-fluid" itemprop="image">
+                        </picture>
+                    </div>
+                    <div class="col12 col-md-6 py-2 px-5">
+                        <h2 id="about-heading" class="display-3 mb-4" itemprop="name">About Me</h2>
+                        <p class="lead fw-bold mb-4">Hi, I'm <span itemprop="givenName">Yan</span> <span itemprop="familyName">Zhang</span>, a passionate designer and developer specializing in Web Development, and UX/UI Design.</p>
+                        <p class="mb-4" itemprop="description">I love blending creativity with functionality to craft visually compelling and user-friendly digital experiences.</p>
+                        <p itemprop="jobTitle">Web Developer and UX Designer</p>
+                        <a href="./about.html" class="btn btn-outline-primary mb-auto" aria-label="Learn more about Yan Zhang">More</a>
+                    </div>                   
+                </div>   
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <footer role="contentinfo" class="mt-4">
+        <div class="footer navbar-expand-lg">
+            <nav class="navbar py-2 bg-dark bg-opacity-75" role="navigation" aria-label="Footer navigation">
+                <div class="container-xl container-fluid">
+                    <div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footerNavbar" data-bs-theme="dark" aria-controls="footerNavbar" aria-expanded="false" aria-label="Toggle footer navigation">
+                            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="footerNavbar">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0" role="menubar">
+                                <li class="nav-item" role="none">
+                                    <a class="nav-link active text-light" aria-current="page" href="#home" role="menuitem">Home</a>
+                                </li>
+                                <li class="nav-item" role="none">
+                                    <a class="nav-link text-light" href="#about" role="menuitem">About</a>
+                                </li>
+                                <li class="nav-item" role="none">
+                                    <a class="nav-link text-light" href="#portfolio" role="menuitem">Portfolio</a>
+                                </li>
+                                <li class="nav-item" role="none">
+                                    <a class="nav-link text-light" href="#contact" role="menuitem">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="socialmedia-icon d-flex" role="list" aria-label="Social media links">
+                        <a href="https://x.com/?lang=en" aria-label="Follow us on X (formerly Twitter)" role="listitem"><i class="bi bi-twitter-x mx-2" aria-hidden="true"></i></a>
+                        <a href="https://ca.linkedin.com/" aria-label="Connect with us on LinkedIn" role="listitem"><i class="bi bi-linkedin mx-2" aria-hidden="true"></i></a>
+                        <a href="https://github.com/" aria-label="Visit our GitHub profile" role="listitem"><i class="bi bi-github mx-2" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/" aria-label="Follow us on Instagram" role="listitem"><i class="bi bi-instagram mx-2" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <p class="container-xl text-light">&copy;2025 AM Design Studio.</p>
+            </nav> 
+        </div>
     </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
 </body>
 </html>
