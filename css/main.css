@@ -79,31 +79,3 @@ ul li a:hover, ul li a:focus{
     font-weight: bold;
     text-decoration: underline;
 }
-.skip-links {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    z-index: 100;
-}
-
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: #000;
-    color: white;
-    padding: 8px;
-    transition: top 0.2s ease-in-out;
-    text-decoration: none;
-}
-
-.skip-link:nth-child(1) { left: 0; }
-.skip-link:nth-child(2) { left: 200px; }
-.skip-link:nth-child(3) { left: 400px; }
-.skip-link:nth-child(4) { left: 600px; }
-
-.skip-link:focus {
-    top: 0;
-    outline: 2px solid white;
-    outline-offset: 2px;
-}
