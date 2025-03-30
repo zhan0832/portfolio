@@ -3,104 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <!-- Bootstrapt CSS -->
-    <link       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Portfolio - AM Media Studio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header class="banner navbar-expand-lg">
-        <nav class="navbar py-1 bg-dark bg-opacity-75">
+    <header class="banner navbar-expand-lg" role="banner">
+        <nav class="navbar py-1 bg-dark bg-opacity-75" role="navigation" aria-label="Main navigation">
             <div class="container-xl container-fluid">
-                <a class="navbar-brand" href="./index.html">
-                    <img src="./images/logo.png" height="40rem
-                " alt="Three star media logo">
+                <a class="navbar-brand" href="./index.html" aria-label="AM Media Studio Home">
+                    <img src="./images/logo.png" height="40" alt="AM Media Studio logo">
                 </a>
                 <div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" data-bs-theme="dark" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" data-bs-theme="dark" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation menu">
+                        <span class="navbar-toggler-icon" aria-hidden="true"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  text-light" href="#about">About</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  text-light" href="#portfolios">Portfolio</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  text-light" href="contact.html">Contact</a>
-                          </li>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0" role="menubar">
+                            <li class="nav-item" role="none">
+                                <a class="nav-link active text-light" aria-current="page" href="#home" role="menuitem">Home</a>
+                            </li>
+                            <li class="nav-item" role="none">
+                                <a class="nav-link text-light" href="#about" role="menuitem">About</a>
+                            </li>
+                            <li class="nav-item" role="none">
+                                <a class="nav-link text-light" href="#portfolios" role="menuitem">Portfolio</a>
+                            </li>
+                            <li class="nav-item" role="none">
+                                <a class="nav-link text-light" href="contact.html" role="menuitem">Contact</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                
             </div>
         </nav>
-        <div class="hero d-flex flex-column justify-content-center align-items-center px-md-5 py-md-5">
+        <div class="hero d-flex flex-column justify-content-center align-items-center px-md-5 py-md-5" role="region" aria-label="Hero section">
             <h1 class="display-2 text-center pt-4 px-5">AM Media Studio</h1>
             <p class="h5 px-5 py-5">A studio focusing on web development and UX design. Using strong visual appeal to create user-friendly and technically robust digital experiences.</p>
             <div class="d-flex flex-column flex-lg-row">
-                <a href="#portfolio" class="btn btn-outline-primary mx-4 mb-4">Explore</a>
-                <a href="#about" class="btn btn-outline-secondary mx-4 mb-4">Contact Us</a>
+                <a href="#portfolio" class="btn btn-outline-primary mx-4 mb-4" aria-label="Explore our portfolio">Explore</a>
+                <a href="#about" class="btn btn-outline-secondary mx-4 mb-4" aria-label="Contact us">Contact Us</a>
             </div>
         </div>    
     </header>
-    <body>
+    <main>
         <!-- about section -->
-        <section id="about" class="container-xl px-5">
+        <section id="about" class="container-xl px-5" role="region" aria-labelledby="about-heading">
             <div class="px-md-5 py-5">
                 <div class="row px-md-5 py-5">
                     <div class="col12 col-md-6 py-2 px-5">
-                        <img src="./images/my-picture.jpg" alt="about us" class="img-fluid">
+                        <img src="./images/my-picture.jpg" alt="Yan Zhang - Web Developer and UX Designer" class="img-fluid">
                     </div>
                     <div class="col12 col-md-6 py-2 px-5">
-                        <h2 class="display-3 mb-4">About Me</h2>
+                        <h2 id="about-heading" class="display-3 mb-4">About Me</h2>
                         <p class="lead fw-bold mb-4">Hi, I'm Yan Zhang, a passionate designer and developer specializing in Web Development, and UX/UI Design.</p>
-                        <p class="mb-4">I love blending creativity with functionality to craft visually compelling and user-friendly ...</p>
-                        <a href="./about.html" class="btn btn-outline-primary mb-auto">More</a>
+                        <p class="mb-4">I love blending creativity with functionality to craft visually compelling and user-friendly digital experiences.</p>
+                        <a href="./about.html" class="btn btn-outline-primary mb-auto" aria-label="Learn more about Yan Zhang">More</a>
                     </div>                   
                 </div>   
             </div>
         </section>
-         <!-- portfolio section -->
-        <section id="portfolio" class="px-5 py-5">
+        <!-- portfolio section -->
+        <section id="portfolio" class="px-5 py-5" role="region" aria-labelledby="portfolio-heading">
             <div class="container-xl px-5 py-5">
-                <h2 class="display-3 pt-5 pb-5 text-center">Portfolio</h2>
+                <h2 id="portfolio-heading" class="display-3 pt-5 pb-5 text-center">Portfolio</h2>
                 <p class="lead text-center">Discover a showcase of the finest work. From stunning designs to seamless user experiences, explore more projects.</p>
                 <div class="row px-md-5">
                     <div class="col-12 col-lg-4 py-5">
                         <h3 class="pb-2">Responsive Website for Three-Star</h3>
                         <div class="row">
-                            <img class="col-12 col-md-6 col-lg-12" src="./images/three-star-media.jpg"  alt="three-star-media">
+                            <img class="col-12 col-md-6 col-lg-12" src="./images/three-star-media.jpg" alt="Three Star Media responsive website project">
                             <div class="col-12 col-md-6 col-lg-12">
                                 <p class="card-text pb-3">Create a fully responsive multi-page website using HTML5 and CSS3. The project will focus on implementing a mobile-first design, using Flexbox and Grid for layout, and ensuring the website adapts to different screen sizes.</p>
-                                <a href="./about.html" class="btn btn-primary mb-auto">Details</a>
+                                <a href="./about.html" class="btn btn-primary mb-auto" aria-label="View details of Three Star Media project">Details</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 py-5">
                         <h3 class="pb-2">Three-page Shopping Website</h3>
                         <div class="row">
-                            <img class="col-12 col-md-6 col-lg-12" src="./images/three-star-media.jpg"  alt="three-star-media">
+                            <img class="col-12 col-md-6 col-lg-12" src="./images/three-star-media.jpg" alt="Shopping website project showcase">
                             <div class="col-12 col-md-6 col-lg-12">
-                                <p class="card-text pb-3">This project aims to create a responsive blog website with a strong focus on accessible layout design. The website will use CSS Grid and Flexbox to ensure a modern, clean layout that adapts across devices, while also ...</p>
-                                <a href="./about.html" class="btn btn-primary mb-auto">Details</a>
+                                <p class="card-text pb-3">This project aims to create a responsive blog website with a strong focus on accessible layout design. The website will use CSS Grid and Flexbox to ensure a modern, clean layout that adapts across devices.</p>
+                                <a href="./about.html" class="btn btn-primary mb-auto" aria-label="View details of shopping website project">Details</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 py-5">
                         <h3 class="pb-2">Creative Lifestyle Storytelling Photography</h3>
                         <div class="row">
-                            <img class="col-12 col-md-6 col-lg-12" src="./images/three-star-media.jpg"  alt="three-star-media">
+                            <img class="col-12 col-md-6 col-lg-12" src="./images/three-star-media.jpg" alt="Photography portfolio showcase">
                             <div class="col-12 col-md-6 col-lg-12">
                                 <p class="card-text pb-3">I am a level-2 Interactive Media Design program student passionate about photography. I've recently started using photography to document life and capture intriguing moments, blending creativity with storytelling.</p>
-                                <a href="./about.html" class="btn btn-primary mb-auto">Details</a>
+                                <a href="./about.html" class="btn btn-primary mb-auto" aria-label="View details of photography portfolio">Details</a>
                             </div>
                         </div>
                     </div>
@@ -108,54 +107,52 @@
             </div>            
         </section>
         <!-- contact us  -->
-        <section id="contact" class="px-5 py-5 mb-5 position-relative">
-            <p class="text-center">Ready to take the next step? Let's bring your vision to life!
-            </p>
-            <div class="position-absolute top-100 start-50 translate-middle"><a href="./about.html" class="btn btn-outline-primary">Contact Us</a></div>
+        <section id="contact" class="px-5 py-5 mb-5 position-relative" role="region" aria-labelledby="contact-heading">
+            <h2 id="contact-heading" class="visually-hidden">Contact Us</h2>
+            <p class="text-center">Ready to take the next step? Let's bring your vision to life!</p>
+            <div class="position-absolute top-100 start-50 translate-middle">
+                <a href="./about.html" class="btn btn-outline-primary" aria-label="Contact AM Media Studio">Contact Us</a>
+            </div>
         </section>         
-        
-    </body>
+    </main>
     <!-- footer section -->
-    <footer>
+    <footer role="contentinfo">
         <div class="footer navbar-expand-lg">
-            <nav class="navbar py-2 bg-dark bg-opacity-75">
+            <nav class="navbar py-2 bg-dark bg-opacity-75" role="navigation" aria-label="Footer navigation">
                 <div class="container-xl container-fluid">
                     <div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" data-bs-theme="dark" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footerNavbar" data-bs-theme="dark" aria-controls="footerNavbar" aria-expanded="false" aria-label="Toggle footer navigation">
+                            <span class="navbar-toggler-icon" aria-hidden="true"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                              <li class="nav-item">
-                                <a class="nav-link active text-light " aria-current="page" href="#home">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link  text-light" href="#about">About</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link  text-light" href="#portfolio">Portfolio</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link  text-light" href="#contact">Contact</a>
-                              </li>
+                        <div class="collapse navbar-collapse" id="footerNavbar">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0" role="menubar">
+                                <li class="nav-item" role="none">
+                                    <a class="nav-link active text-light" aria-current="page" href="#home" role="menuitem">Home</a>
+                                </li>
+                                <li class="nav-item" role="none">
+                                    <a class="nav-link text-light" href="#about" role="menuitem">About</a>
+                                </li>
+                                <li class="nav-item" role="none">
+                                    <a class="nav-link text-light" href="#portfolio" role="menuitem">Portfolio</a>
+                                </li>
+                                <li class="nav-item" role="none">
+                                    <a class="nav-link text-light" href="#contact" role="menuitem">Contact</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="socialmedia-icon d-flex">
-                        <a href="https://x.com/?lang=en"><i class="bi bi-twitter-x  mx-2"></i></a>
-                        <a href="https://ca.linkedin.com/"><i class="bi bi-linkedin mx-2"></i></a>
-                        <a href="https://github.com/"><i class="bi bi-github mx-2"></i></a>
-                        <a href="https://www.instagram.com/"><i class="bi bi-instagram mx-2"></i></a>
-
+                    <div class="socialmedia-icon d-flex" role="list" aria-label="Social media links">
+                        <a href="https://x.com/?lang=en" aria-label="Follow us on X (formerly Twitter)" role="listitem"><i class="bi bi-twitter-x mx-2" aria-hidden="true"></i></a>
+                        <a href="https://ca.linkedin.com/" aria-label="Connect with us on LinkedIn" role="listitem"><i class="bi bi-linkedin mx-2" aria-hidden="true"></i></a>
+                        <a href="https://github.com/" aria-label="Visit our GitHub profile" role="listitem"><i class="bi bi-github mx-2" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/" aria-label="Follow us on Instagram" role="listitem"><i class="bi bi-instagram mx-2" aria-hidden="true"></i></a>
                     </div>
-                    
                 </div>
-                <P class="container-xl text-light">&copy;2025 AM Design Studio.</P>
+                <p class="container-xl text-light">&copy;2025 AM Design Studio.</p>
             </nav> 
-            
         </div>
-
     </footer>
-    <!-- bootstrapt JS -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
